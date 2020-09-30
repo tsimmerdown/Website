@@ -1,0 +1,76 @@
+import React from 'react';
+import styled from 'styled-components'
+
+import Typography from '@material-ui/core/Typography';
+import Container from '@material-ui/core/Container';
+import Button from '@material-ui/core/Button';
+import GetAppIcon from '@material-ui/icons/GetApp';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import MailIcon from '@material-ui/icons/Mail';
+import IconButton from '@material-ui/core/IconButton';
+
+
+const AboutCont = styled(Container)`
+    position: relative;
+    top: 70vh;
+    padding: 5vh 5vh 0 5vh;
+`
+
+const Image = styled.div`
+    background-image: url("./Images/why-choose.png");
+    height: 60vh;
+    width: 100vh;
+    background-repeat: no-repeat;
+
+`
+
+const Quote = styled(Typography)`
+    text-align: center;
+    margin: 10vh;
+`
+const OverviewCont = styled(Container)`
+    display: flex;
+    
+`
+
+const TextCont = styled(Container)`
+    font-size: 20px;
+`
+const Heading = styled(Typography)`
+    margin-top: 1vh;
+`
+const Resume = styled(Button)`
+    background-color: #CD853F;
+    width: 100%;
+`
+const ContactIcons = styled.div`
+    display: flex;
+    margin: 2vh 5vh;
+`
+const About = () => {
+    return <AboutCont>
+        <Quote variant="h4">"Just don't give up trying to do what you really want to do. Where there is INSPIRATION I don't think you can go wrong"</Quote>
+        <OverviewCont>
+            <Image />
+            <TextCont>
+                <Heading variant="h5" style={{ color: "#CD853F", }}>ABOUT</Heading>
+                <Heading variant="h2">Stephen Tsim</Heading>
+
+                <p>My favourite things to do in order of importance are building beautiful, scalable applications that cater to vast number of users, making sounds that are different and unique, and sketching protraits of my favourite characters.</p>
+                <p>I love crafting software that has an impact on the world and leaves a mark for generations to come.</p>
+                <p style={{ marginBottom: "5vh" }}>I am a Computer Engineering graduate who specializes in mobile development (iOS and Android), web development and backend development.</p>
+                <a href="./Stephen's Resume.pdf" download style={{textDecoration: "none"}}><Resume><GetAppIcon />Download Resume</Resume></a>
+                <ContactIcons>
+                    <IconButton edge="start" color="inherit" aria-label="menu" style={{ flexGrow: "1" }}>
+                        <GitHubIcon/>
+                    </IconButton>
+                    <IconButton edge="start" color="inherit" aria-label="menu" style={{ flexGrow: "1" }}>
+                        <MailIcon/>
+                    </IconButton>
+                </ContactIcons>
+            </TextCont>
+        </OverviewCont>
+    </AboutCont>
+}
+
+export default About;
