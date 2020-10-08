@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react';
 import './App.css';
 
@@ -22,10 +23,10 @@ function App() {
           </Route>
           <Route path="/">
               <Navbar />
-              <div id="Home"><Home /></div>
-              <div id="About" ><About /></div>
-              <div id="Skills" ><Skills /></div>
-              <div id="Projects" ><Projects carouselIndex={carouselIndex} setCarouselIndex={setCarouselIndex} slideIn={slideIn} setSlideIn={setSlideIn} slideDirection={slideDirection} setSlideDirection={setSlideDirection} /></div>
+              <a id="Home"><Home /></a>
+              <a id="About"><About /></a>
+              <a id="Skills" ><Skills /></a>
+              <a id="Projects" ><Projects carouselIndex={carouselIndex} setCarouselIndex={setCarouselIndex} slideIn={slideIn} setSlideIn={setSlideIn} slideDirection={slideDirection} setSlideDirection={setSlideDirection} /></a>
               <ContactLander />
           </Route>
         </Switch>
