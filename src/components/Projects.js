@@ -1,11 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Typography, Slide } from '@material-ui/core'
+import { Typography } from '@material-ui/core'
 import Carousel from 'react-material-ui-carousel'
 
 import CarouselSlide from './CarouselSlide';
-import Arrow from './Arrow';
 import { SLIDE_INFO } from '../constant'
 
 

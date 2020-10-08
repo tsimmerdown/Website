@@ -3,8 +3,7 @@ import './App.css';
 
 import { Navbar, Home, About, Skills, Projects, ContactLander, Contact } from './components/index';
 
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { Fade } from '@material-ui/core';
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 function App() {
 
@@ -23,10 +22,10 @@ function App() {
           </Route>
           <Route path="/">
               <Navbar />
-              <a id="Home"><Home /></a>
-              <a id="About"><About /></a>
-              <a id="Skills"><Skills /></a>
-              <a id="Projects"><Projects carouselIndex={carouselIndex} setCarouselIndex={setCarouselIndex} slideIn={slideIn} setSlideIn={setSlideIn} slideDirection={slideDirection} setSlideDirection={setSlideDirection} /></a>
+              <div id="Home"><Home /></div>
+              <div id="About" ><About /></div>
+              <div id="Skills" ><Skills /></div>
+              <div id="Projects" ><Projects carouselIndex={carouselIndex} setCarouselIndex={setCarouselIndex} slideIn={slideIn} setSlideIn={setSlideIn} slideDirection={slideDirection} setSlideDirection={setSlideDirection} /></div>
               <ContactLander />
           </Route>
         </Switch>
