@@ -18,7 +18,7 @@ function App() {
 
       <Router>
         <Switch>
-          <Route path="/Contact">
+          <Route path="/#Contact">
               <Contact />
           </Route>
           <Route path="/">

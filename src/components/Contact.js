@@ -43,7 +43,7 @@ const Contact = () => {
         <Banner>
             <Header variant="h3">Contact Me</Header>
             <Breadcrumbs aria-label="breadcrumb" style={{ margin: "2vh" }}>
-                <Link color="inherit" href="/Home" style={{ color: "#CD853F" }}> Home</Link>
+                <Link color="inherit" href="/#Home" style={{ color: "#CD853F" }}> Home</Link>
                 <Typography color="textPrimary">Contact</Typography>
             </Breadcrumbs>
         </Banner>
