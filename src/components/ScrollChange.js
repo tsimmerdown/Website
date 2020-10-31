@@ -4,7 +4,7 @@ import { useScrollTrigger } from "@material-ui/core";
 const ScrollHandler = props => {
   const trigger = useScrollTrigger({
     disableHysteresis: true,
-    threshold: 700,
+    threshold: 650,
     target: props.window ? window() : undefined
   });
 

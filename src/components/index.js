@@ -1,5 +1,4 @@
 import About from './About';
-import Arrow from './Arrow';
 import CarouselSlide from './CarouselSlide';
 import Contact from './Contact';
 import ContactLander from './ContactLander';
@@ -10,4 +9,4 @@ import ScrollChange from './ScrollChange';
 import Skills from './Skills';
 
 
-export { About, Arrow, CarouselSlide, Contact, ContactLander, Home, Navbar, Projects, ScrollChange, Skills };
+export { About, CarouselSlide, Contact, ContactLander, Home, Navbar, Projects, ScrollChange, Skills };

@@ -6,8 +6,8 @@ import Container from '@material-ui/core/Container';
 import Button from '@material-ui/core/Button';
 import GetAppIcon from '@material-ui/icons/GetApp';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import MailIcon from '@material-ui/icons/Mail';
 import IconButton from '@material-ui/core/IconButton';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 
 const AboutCont = styled(Container)`
@@ -23,7 +23,6 @@ const Image = styled.div`
     background-repeat: no-repeat;
 
 `
-
 const Quote = styled(Typography)`
     text-align: center;
     margin: 10vh;
@@ -31,10 +30,6 @@ const Quote = styled(Typography)`
 const OverviewCont = styled(Container)`
     display: flex;
     
-`
-
-const TextCont = styled(Container)`
-    font-size: 20px;
 `
 const Heading = styled(Typography)`
     margin-top: 1vh;
@@ -52,7 +47,7 @@ const About = () => {
         <Quote variant="h4">"Just don't give up trying to do what you really want to do. Where there is INSPIRATION I don't think you can go wrong"</Quote>
         <OverviewCont>
             <Image />
-            <TextCont>
+            <Container style={{fontSize: "20px"}}>
                 <Heading variant="h5" style={{ color: "#CD853F", }}>ABOUT</Heading>
                 <Heading variant="h2">Stephen Tsim</Heading>
 
@@ -61,14 +56,14 @@ const About = () => {
                 <p style={{ marginBottom: "5vh" }}>I am a Computer Engineering graduate who specializes in mobile development (iOS and Android), web development and backend development.</p>
                 <a href="./Stephen's Resume.pdf" download style={{textDecoration: "none"}}><Resume><GetAppIcon />Download Resume</Resume></a>
                 <ContactIcons>
-                    <IconButton edge="start" color="inherit" aria-label="menu" style={{ flexGrow: "1" }}>
-                        <GitHubIcon/>
+                    <IconButton color="inherit" aria-label="menu" style={{flexGrow: "1"}} >
+                        <a href="https://github.com/tsimmerdown" target="blank" style={{width:"23vh"}}><GitHubIcon/></a>
                     </IconButton>
-                    <IconButton edge="start" color="inherit" aria-label="menu" style={{ flexGrow: "1" }}>
-                        <MailIcon/>
+                    <IconButton color="inherit" aria-label="menu" style={{flexGrow: "1"}}>
+                        <a href="https://www.linkedin.com/in/stephen-tsim" target="blank" style={{width:"23vh"}}><LinkedInIcon/></a>
                     </IconButton>
                 </ContactIcons>
-            </TextCont>
+            </Container>
         </OverviewCont>
     </AboutCont>
 }

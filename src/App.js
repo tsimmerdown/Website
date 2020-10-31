@@ -1,9 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react';
-import './App.css';
-
 import { Navbar, Home, About, Skills, Projects, ContactLander, Contact } from './components/index';
-
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 function App() {

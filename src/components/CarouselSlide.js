@@ -6,17 +6,29 @@ import { Card } from '@material-ui/core';
 
 
 const Cards = styled(Card)`
-    text-align: center;
+    display: flex;
+    align-items: flex-end;
     background-size: cover;
     width: 80vh;
     min-height: 40vh; 
+`
+
+const TextCont = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    width: 100%;
+    background-color: #000000B3;
+    text-align: center;
+    color: white;
 `
 
 const CarouselSlide = ({content}) => {
 
     return (
         <Cards style={{backgroundImage: content.backgroundImage}}>
-           {content.title}
+           <TextCont>{content.title}</TextCont>
         </Cards>
     );
 }
