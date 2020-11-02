@@ -60,7 +60,7 @@ const Contact = () => {
         </Banner>
         <ContactCont>
         <motion.div initial={{y: -20, opacity: 0}} animate={{y: 0, opacity: 1}} transition={{delay: 0.2, duration: 0.5}}>
-            <ContactForm action="https://stephentsim.netlify.app/Contact/ajax/send" method="POST" onSub enctype="multipart/form-data" name="EmailForm" role="form" autoComplete>
+            <ContactForm action="/ajax/send" method="POST" onSub enctype="multipart/form-data" name="EmailForm" role="form" autoComplete>
                 <Typography variant="h4">Get in touch</Typography>
                 <div style={{ display: "flex", flexDirection: "column" }}>
                     <div>

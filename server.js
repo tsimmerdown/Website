@@ -5,7 +5,13 @@ const nodemailer = require('nodemailer');
 const cors = require('cors');
 const app = express();
 
-app.use(express.static(path.join(__dirname, 'build')));
+const publicPath = path.join(__dirname,'build');
+
+app.use(express.static(publicPath));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(publicPath, 'index.html'));
+});
 
 var transport = {
   host: 'smtp.gmail.com',
