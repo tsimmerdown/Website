@@ -1,9 +1,11 @@
-var express = require('express');
-var router = express.Router();
-var nodemailer = require('nodemailer');
-var cors = require('cors');
+const express = require('express');
+const path = require('path');
+const router = express.Router();
+const nodemailer = require('nodemailer');
+const cors = require('cors');
 const app = express();
 
+app.use(express.static(path.join(__dirname, 'build')));
 
 var transport = {
   host: 'smtp.gmail.com',
@@ -57,6 +59,7 @@ router.post('/ajax/send', (req, res) => {
     }
   })
 })
+
 
 app.use(cors())
 app.use(express.json())
