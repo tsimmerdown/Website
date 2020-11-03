@@ -17,10 +17,12 @@ const AboutCont = styled(Container)`
 `
 
 const Image = styled.div`
-    background-image: url("./Images/why-choose.png");
+    background-image: url("./Images/stephen.jpg");
     height: 60vh;
     width: 100vh;
-    background-repeat: no-repeat;
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;  
 
 `
 const Quote = styled(Typography)`
@@ -51,9 +53,9 @@ const About = () => {
                 <Heading variant="h5" style={{ color: "#CD853F", }}>ABOUT</Heading>
                 <Heading variant="h2">Stephen Tsim</Heading>
 
-                <p>My favourite things to do in order of importance are building beautiful, scalable applications that cater to vast number of users, making sounds that are different and unique, and sketching protraits of my favourite characters.</p>
+                <p>My favourite things to do are building scalable applications that cater to vast number of users and designing beautiful UI to support such applications.</p>
                 <p>I love crafting software that has an impact on the world and leaves a mark for generations to come.</p>
-                <p style={{ marginBottom: "5vh" }}>I am a Computer Engineering graduate who specializes in mobile development (iOS and Android), web development and backend development.</p>
+                <p style={{ marginBottom: "5vh" }}>I am a Computer Engineering graduate who specializes in web development and backend development.</p>
                 <a href="./Stephen's Resume.pdf" download style={{textDecoration: "none"}}><Resume><GetAppIcon />Download Resume</Resume></a>
                 <ContactIcons>
                     <IconButton color="inherit" aria-label="menu" style={{flexGrow: "1"}} >

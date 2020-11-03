@@ -35,7 +35,7 @@ const Home = () => {
         <Text>
         <Typography variant="h3">My name is <BigText initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: "1"}}>Stephen</BigText>
         <br></br>and I’m a <BigText initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: "0.75", delay:"0.5"}}>Web Developer</BigText></Typography><br></br>
-        Enjoy all the website content, most importantly check out my skills and projects. Cheers!!!
+        Welcome to my website. Take the time to check out my skills and projects. Cheers!!!
         </Text>
     </Div>
 }
