@@ -28,6 +28,10 @@ const Papers = styled(Paper)`
     padding: 2vh;
     text-align: center;
     align-content: center;
+    &:hover{
+        transform: scale(1.05);
+        transition: 0.25s ease-in background-color, 0.25s ease-in opacity, 0.25s ease-out transform;
+    }
 `
 
 
