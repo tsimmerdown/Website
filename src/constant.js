@@ -2,7 +2,12 @@ export const SLIDE_INFO = [
   {
     backgroundImage: "url(./Images/sweetbundle.jpg)",
     title: "Sweet Bundle by Ying",
-    link: "https://github.com/tsimmerdown/SweetBundle",
+    link: "https://sweetbundle.netlify.app/",
+  },
+  {
+    backgroundImage: "url(./Images/electronicArts.jpg)",
+    title: "Electronic Arts Clone",
+    link: "https://https://electronic-farts.netlify.app/",
   },
   {
     backgroundImage: "url(./Images/foodforthought.jpg)",
